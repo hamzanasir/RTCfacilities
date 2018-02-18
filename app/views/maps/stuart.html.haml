@@ -1,2 +1,12 @@
-%h1 Maps#stuart
-%p Find me in app/views/maps/stuart.html.haml
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  %div.container
+    %a.navbar-brand{:href => "/"} RTCFacilities
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item.active
+          = link_to 'Home', root_path, class: 'nav-link'
+      %select#floor{:style => "width: 27%;"}
+        %option{:value => "1"} SB-1
+        %option{:value => "2"} SB-2
