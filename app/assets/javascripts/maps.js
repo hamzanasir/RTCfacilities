@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   const viewportWidth = $(window).width();
-  const svgPath = viewportWidth > 500 ? '/assets/SB-01-R.svg' : '/assets/SB-01.svg';
+  const svgPath = viewportWidth > 500 ? '/svg/SB-01-R.svg' : '/svg/SB-01.svg';
 
   d3.xml(svgPath, function(xml) {
     $('#svgContainer').append(xml.documentElement);
