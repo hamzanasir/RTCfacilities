@@ -2,12 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  height: 100vh
+  height: 100vh;
+  background-color: #222;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+	background-repeat: repeat;
 }
 
 .meny {
   background: #4a4d51;
   height: 100vh;
+}
+
+.contents {
+  background: white;
+  width: 100%;
+	height: 100%;
 }
 
 .sidecontents {
