@@ -8,8 +8,18 @@ body {
 	background-repeat: repeat;
 }
 
+svg {
+  pointer-events: all;
+}
+
 #svgContainer {
-  padding: 36px;
+  padding-top: 36px;
+}
+
+@media only screen and (max-width: 500px) {
+  #svgContainer {
+    padding: 36px;
+  }
 }
 
 .meny {

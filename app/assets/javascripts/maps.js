@@ -25,6 +25,18 @@ $(document).ready(function() {
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', '87vh');
+
+      svg.selectAll('path').on('mouseover', function() {
+        d3.select(this).style("fill-opacity", "0")
+                       .style('fill', '#51047a')
+                       .transition()
+                       .duration(300)
+                       .style("fill-opacity", "0.59");
+      }).on('mouseout', function () {
+        d3.select(this).transition()
+                       .duration(300)
+                       .style("fill-opacity", "0");
+      });
     });
   } else {  //mobile rendering
     d3.xml(svgPath, function(xml) {
@@ -32,6 +44,18 @@ $(document).ready(function() {
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', '100%');
+
+      svg.selectAll('path').on('mouseover', function() {
+        d3.select(this).style("fill-opacity", "0")
+                       .style('fill', '#51047a')
+                       .transition()
+                       .duration(300)
+                       .style("fill-opacity", "0.59");
+      }).on('mouseout', function () {
+        d3.select(this).transition()
+                       .duration(300)
+                       .style("fill-opacity", "0");
+      });
     });
   }
 });
