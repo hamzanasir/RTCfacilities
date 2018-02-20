@@ -1,5 +1,9 @@
 $(document).ready(function() {
   $('#floor').select2();
+  $('#mySelect2').on('select2:select', function (e) {
+      var data = e.params.data;
+      console.log(data);
+  });
 
   var meny = Meny.create({
   	menuElement: document.querySelector( '.meny' ),
@@ -17,45 +21,29 @@ $(document).ready(function() {
   	touch: true,
   });
 
-  const viewportWidth = $(window).width();
-  const svgPath = viewportWidth > 500 ? '/svg/SB-01-R.svg' : '/svg/SB-01.svg';
-  if (viewportWidth > 500) {   //desktop rendering
-    d3.xml(svgPath, function(xml) {
-      $('#svgContainer').append(xml.documentElement);
-      const svg = d3.select('svg');
-      svg.attr('width', '100%');
-      svg.attr('height', '87vh');
-
-      svg.selectAll('path').on('mouseover', function() {
-        d3.select(this).style("fill-opacity", "0")
-                       .style('fill', '#51047a')
-                       .transition()
-                       .duration(300)
-                       .style("fill-opacity", "0.59");
-      }).on('mouseout', function () {
-        d3.select(this).transition()
-                       .duration(300)
-                       .style("fill-opacity", "0");
-      });
-    });
-  } else {  //mobile rendering
-    d3.xml(svgPath, function(xml) {
-      $('#svgContainer').append(xml.documentElement);
-      const svg = d3.select('svg');
-      svg.attr('width', '100%');
-      svg.attr('height', '100%');
-
-      svg.selectAll('path').on('mouseover', function() {
-        d3.select(this).style("fill-opacity", "0")
-                       .style('fill', '#51047a')
-                       .transition()
-                       .duration(300)
-                       .style("fill-opacity", "0.59");
-      }).on('mouseout', function () {
-        d3.select(this).transition()
-                       .duration(300)
-                       .style("fill-opacity", "0");
-      });
-    });
-  }
+  const mobile = $(window).width() <= 500;
+  renderSVG(mobile, $('#floor').select2('data')[0].text);
 });
+
+function renderSVG (mobile, svgName) {
+  const svgPath = !mobile ? `/svg/${svgName}-R.svg` : `/svg/${svgName}.svg`;
+
+  d3.xml(svgPath, function(xml) {
+    $('#svgContainer').append(xml.documentElement);
+    const svg = d3.select('svg');
+    svg.attr('width', '100%');
+    svg.attr('height', !mobile ? '87vh' : '100%');
+
+    svg.selectAll('path').on('mouseover', function() {
+      d3.select(this).style("fill-opacity", "0")
+                     .style('fill', '#51047a')
+                     .transition()
+                     .duration(300)
+                     .style("fill-opacity", "0.59");
+    }).on('mouseout', function () {
+      d3.select(this).transition()
+                     .duration(300)
+                     .style("fill-opacity", "0");
+    });
+  });
+}
