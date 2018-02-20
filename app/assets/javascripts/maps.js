@@ -19,11 +19,19 @@ $(document).ready(function() {
 
   const viewportWidth = $(window).width();
   const svgPath = viewportWidth > 500 ? '/svg/SB-01-R.svg' : '/svg/SB-01.svg';
-
-  d3.xml(svgPath, function(xml) {
-    $('#svgContainer').append(xml.documentElement);
-    const svg = d3.select('svg');
-    svg.attr('width', '100%');
-    svg.attr('height', '100%');
-  });
+  if (viewportWidth > 500) {   //desktop rendering
+    d3.xml(svgPath, function(xml) {
+      $('#svgContainer').append(xml.documentElement);
+      const svg = d3.select('svg');
+      svg.attr('width', '100%');
+      svg.attr('height', '87vh');
+    });
+  } else {  //mobile rendering
+    d3.xml(svgPath, function(xml) {
+      $('#svgContainer').append(xml.documentElement);
+      const svg = d3.select('svg');
+      svg.attr('width', '100%');
+      svg.attr('height', '100%');
+    });
+  }
 });
