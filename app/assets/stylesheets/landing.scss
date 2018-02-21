@@ -52,3 +52,12 @@ section {
 		margin: 0;
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	.landing {
+    min-height: 85vh;
+	}
+	.landing .background-image {
+		width: auto;
+	}
+}
