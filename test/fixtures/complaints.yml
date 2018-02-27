@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  complaint: MyText
+  higher: false
+  satisfied: false
+
+two:
+  complaint: MyText
+  higher: false
+  satisfied: false
