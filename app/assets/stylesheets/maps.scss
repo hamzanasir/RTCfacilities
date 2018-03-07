@@ -1,97 +1,99 @@
 // Place all the styles related to the maps controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  height: 100vh;
-  background-color: #222;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
-	background-repeat: repeat;
-}
-
-svg {
-  pointer-events: all;
-}
-
-#svgContainer {
-  padding-top: 36px;
-}
-
-@media only screen and (max-width: 500px) {
-  #svgContainer {
-    padding: 36px;
+.maps {
+  body {
+    height: 100vh;
+    background-color: #222;
+  	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  	background-repeat: repeat;
   }
+
+  svg {
+    pointer-events: all;
+  }
+
+  #svgContainer {
+    padding-top: 36px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #svgContainer {
+      padding: 36px;
+    }
+  }
+
+  .meny {
+    background: #4a4d51;
+    height: 100vh;
+  }
+
+  .contents {
+    background: white;
+    width: 100%;
+  	height: 100%;
+  }
+
+  .sidecontents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4a4d51;
+    color: white;
+    margin-top: 15px;
+  }
+
+  .sidecontents ul {
+    list-style-type: none;
+  }
+
+  .sidecontents li {
+    padding-top: 9px;
+  }
+
+  .meny-arrow {
+  	position: absolute;
+  	z-index: 10;
+
+  	border: 10px solid transparent;
+
+  	-webkit-transition: opacity 0.4s ease 0.4s;
+  	   -moz-transition: opacity 0.4s ease 0.4s;
+  	    -ms-transition: opacity 0.4s ease 0.4s;
+  	     -o-transition: opacity 0.4s ease 0.4s;
+  	        transition: opacity 0.4s ease 0.4s;
+  }
+  	.meny-left .meny-arrow {
+  		left: 14px;
+  		top: 50%;
+  		margin-top: -16px;
+  		border-left: 16px solid #333;
+  	}
+  	.meny-right .meny-arrow {
+  		right: 14px;
+  		top: 50%;
+  		margin-top: -16px;
+  		border-right: 16px solid #333;
+  	}
+  	.meny-top .meny-arrow {
+  		left: 50%;
+  		top: 14px;
+  		margin-left: -16px;
+  		border-top: 16px solid #333;
+  	}
+  	.meny-bottom .meny-arrow {
+  		left: 50%;
+  		bottom: 14px;
+  		margin-left: -16px;
+  		border-bottom: 16px solid #333;
+  	}
+  	.meny-active .meny-arrow {
+  		opacity: 0;
+
+  		-webkit-transition: opacity 0.2s ease;
+  		   -moz-transition: opacity 0.2s ease;
+  		    -ms-transition: opacity 0.2s ease;
+  		     -o-transition: opacity 0.2s ease;
+  		        transition: opacity 0.2s ease;
+  	}
 }
-
-.meny {
-  background: #4a4d51;
-  height: 100vh;
-}
-
-.contents {
-  background: white;
-  width: 100%;
-	height: 100%;
-}
-
-.sidecontents {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #4a4d51;
-  color: white;
-  margin-top: 15px;
-}
-
-.sidecontents ul {
-  list-style-type: none;
-}
-
-.sidecontents li {
-  padding-top: 9px;
-}
-
-.meny-arrow {
-	position: absolute;
-	z-index: 10;
-
-	border: 10px solid transparent;
-
-	-webkit-transition: opacity 0.4s ease 0.4s;
-	   -moz-transition: opacity 0.4s ease 0.4s;
-	    -ms-transition: opacity 0.4s ease 0.4s;
-	     -o-transition: opacity 0.4s ease 0.4s;
-	        transition: opacity 0.4s ease 0.4s;
-}
-	.meny-left .meny-arrow {
-		left: 14px;
-		top: 50%;
-		margin-top: -16px;
-		border-left: 16px solid #333;
-	}
-	.meny-right .meny-arrow {
-		right: 14px;
-		top: 50%;
-		margin-top: -16px;
-		border-right: 16px solid #333;
-	}
-	.meny-top .meny-arrow {
-		left: 50%;
-		top: 14px;
-		margin-left: -16px;
-		border-top: 16px solid #333;
-	}
-	.meny-bottom .meny-arrow {
-		left: 50%;
-		bottom: 14px;
-		margin-left: -16px;
-		border-bottom: 16px solid #333;
-	}
-	.meny-active .meny-arrow {
-		opacity: 0;
-
-		-webkit-transition: opacity 0.2s ease;
-		   -moz-transition: opacity 0.2s ease;
-		    -ms-transition: opacity 0.2s ease;
-		     -o-transition: opacity 0.2s ease;
-		        transition: opacity 0.2s ease;
-	}
