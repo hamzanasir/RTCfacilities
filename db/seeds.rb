@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'nokogiri'
+
+Complaint.delete_all
+Room.delete_all
+Building.delete_all
+
+buildings = {
+  'Stuart' => 'SB',
+}
+
+buildings.each do |building, initial|
+  new_building = Building.create(:name => building, :initial => initial)
+  doc = Nokogiri::XML(File.open("public/svg/#{initial}-01.svg"))
+  doc.css('svg path').each do |room|
+    roomNum = initial + '-' + room['id'].split('-', 2)[1].strip()
+    Room.create(:roomNumber => roomNum, :building => new_building)
+  end
+end
