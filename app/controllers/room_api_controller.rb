@@ -1,0 +1,2 @@
+class RoomApiController < ApplicationController
+end
