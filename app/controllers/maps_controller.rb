@@ -10,6 +10,10 @@ class MapsController < ApplicationController
       render json: room.to_json(:include => :complaints )
     end
   end
+  
+  def stuart_room_post
+    render json: {'hio': 'dhne'}
+  end
 
   def alumini
   end
