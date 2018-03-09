@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get '/stuart', to: 'maps#stuart', as: 'stuart'
+  
+  get '/stuart/:roomNumber', to: 'maps#stuart_room'
 
   get '/alumini', to: 'maps#alumini', as: 'alumini'
 
