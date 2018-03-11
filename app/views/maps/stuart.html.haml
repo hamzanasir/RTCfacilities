@@ -22,3 +22,34 @@
           %option{:value => "1"} SB-01
           %option{:value => "2"} SB-02
   %div#svgContainer
+
+/ Modal
+#submitReport.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "submitReportLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5#submitReportLabel.modal-title Submit Request
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        %form
+          %input{:type => "hidden", :name => "complaint[room]", :value => "0"}/
+          .row
+            .btn-group.btn-group-toggle{"data-toggle" => "buttons", :style => "width: 50%; margin: 0 auto;"}
+              %label.btn.btn-success.active{:style => "width: 100%;"}
+                %input#option1{:autocomplete => "off", :checked => "checked", :name => "options", :type => "radio"}/
+                <i class="fas fa-arrow-alt-circle-up"></i>
+              %label.btn.btn-danger{:style => "width: 100%;"}
+                %input#option2{:autocomplete => "off", :name => "options", :type => "radio"}/
+                <i class="fas fa-arrow-alt-circle-down"></i>
+
+
+          .form-group
+            %label{:for => "exampleFormControlTextarea1"} Example textarea
+            %textarea#exampleFormControlTextarea1.form-control{:rows => "3", :name => "complaint[complaint]"}
+
+      .modal-footer
+        %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-primary{:type => "button"} Save changes
+
+

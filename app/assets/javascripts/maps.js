@@ -1,3 +1,5 @@
+/*global $ Meny d3 */
+
 $(document).ready(function() {
   $('#floor').select2();
 
@@ -48,6 +50,10 @@ function renderSVG (mobile, svgName) {
                        .duration(300)
                        .style("fill-opacity", "0");
       });
+      
+      svg.selectAll('path').each(function (d, i) {
+        console.log(d3.select(this).attr('id'));
+      })
       $('.alert').remove();
     } catch (e) {
       $('nav').after(`<div class="alert alert-danger container" style="margin-top: 25px;" role="alert">
