@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+
+  get 'admin/stuart'
+
+  get 'admin/alumini'
+
   get '/stuart', to: 'maps#stuart', as: 'stuart'
   
   get '/stuart/:roomNumber', to: 'maps#stuart_room'
