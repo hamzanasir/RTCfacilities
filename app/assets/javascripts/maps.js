@@ -38,18 +38,6 @@ function renderSVG (mobile, svgName, initialRender) {
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', !mobile ? '87vh' : '100%');
-
-      svg.selectAll('path').on('mouseover', function() {
-        d3.select(this).style("fill-opacity", "0")
-                       .style('fill', '#51047a')
-                       .transition()
-                       .duration(300)
-                       .style("fill-opacity", "0.59");
-      }).on('mouseout', function () {
-        d3.select(this).transition()
-                       .duration(300)
-                       .style("fill-opacity", "0");
-      });
       
       svg.selectAll('path').each(function (d, i) {
         let room = d3.select(this).attr('id').split('-')[1];
@@ -57,20 +45,23 @@ function renderSVG (mobile, svgName, initialRender) {
           let higherCount = 0;
           room.complaints.forEach((complaint) => {
             if (complaint.higher) {
-              console.log(`Adding for`);
-              console.log(room)
               higherCount += 1;
             } else {
-              console.log(`Subtracting for`);
-              console.log(room);
               higherCount -= 1;
             }
           });
-          console.log(higherCount);
           if (higherCount > 0) {
-            d3.select(this).style('fill', 'blue');
+            d3.select(this).style("fill-opacity", "0")
+                           .style('fill', 'red')
+                           .transition()
+                           .duration(300)
+                           .style("fill-opacity", "0.59");
           } else if (higherCount < 0) {
-            d3.select(this).style('fill', 'red');
+            d3.select(this).style("fill-opacity", "0")
+                           .style('fill', 'blue')
+                           .transition()
+                           .duration(300)
+                           .style("fill-opacity", "0.59");
           } else {
             d3.select(this).style('fill', 'none');
           }
