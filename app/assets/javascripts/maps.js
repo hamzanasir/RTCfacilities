@@ -20,15 +20,15 @@ $(document).ready(function() {
   });
 
   const mobile = $(window).width() <= 500;
-  renderSVG(mobile, $('#floor').select2('data')[0].text);
+  renderSVG(mobile, $('#floor').select2('data')[0].text, true);
 
   $('#floor').on('select2:select', function (e) {
       var data = e.params.data;
-      renderSVG(mobile, data.text);
+      renderSVG(mobile, data.text, false);
   });
 });
 
-function renderSVG (mobile, svgName) {
+function renderSVG (mobile, svgName, initialRender) {
   const svgPath = !mobile ? `/svg/${svgName}-R.svg` : `/svg/${svgName}.svg`;
 
   d3.xml(svgPath, function(xml) {
@@ -52,10 +52,39 @@ function renderSVG (mobile, svgName) {
       });
       
       svg.selectAll('path').each(function (d, i) {
-        console.log(d3.select(this).attr('id'));
-      })
-      $('.alert').remove();
+        let room = d3.select(this).attr('id').split('-')[1];
+        $.get(`/stuart/${room}`).then((room) => {
+          let higherCount = 0;
+          room.complaints.forEach((complaint) => {
+            if (complaint.higher) {
+              console.log(`Adding for`);
+              console.log(room)
+              higherCount += 1;
+            } else {
+              console.log(`Subtracting for`);
+              console.log(room);
+              higherCount -= 1;
+            }
+          });
+          console.log(higherCount);
+          if (higherCount > 0) {
+            d3.select(this).style('fill', 'blue');
+          } else if (higherCount < 0) {
+            d3.select(this).style('fill', 'red');
+          } else {
+            d3.select(this).style('fill', 'none');
+          }
+        });
+      });
+      $('path').click(function(e) {
+        $('#submitReport form').attr('action', `/stuart/${e.target.id.split('-')[1]}`);
+        $('#submitReport').modal({show: true})
+      });
+      if (!initialRender) {
+        $('.alert').remove();
+      }
     } catch (e) {
+      $('.alert').remove();
       $('nav').after(`<div class="alert alert-danger container" style="margin-top: 25px;" role="alert">
         Sorry the map for this floor doesn't exist.
       </div>`);
