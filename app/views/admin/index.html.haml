@@ -1,2 +1,7 @@
-%h1 Admin#index
-%p Find me in app/views/admin/index.html.haml
+#adminButtons{:style => "margin-top: 35px;"}
+  .row{:style => "margin: 17px 0px;"}
+    .col-md-4.offset-md-4.align-middle
+      = link_to "Stuart", admin_stuart_path, class: "btn btn-success btn-lg btn-block"
+  .row{:style => "margin: 17px 0px;"}
+    .col-md-4.offset-md-4
+      = link_to "Alumini", admin_alumini_path, class: "btn btn-success btn-lg btn-block"

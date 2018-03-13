@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'admin/index'
+  get '/admin', to: 'admin#index', as: 'admin'
 
-  get 'admin/stuart'
+  get 'admin/stuart', as: 'admin_stuart'
 
-  get 'admin/alumini'
+  get 'admin/alumini', as: 'admin_alumini'
 
   get '/stuart', to: 'maps#stuart', as: 'stuart'
   
