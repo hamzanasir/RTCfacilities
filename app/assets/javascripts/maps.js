@@ -41,18 +41,23 @@ function renderSVG (mobile, svgName, initialRender) {
       
       svg.selectAll('path').each(function (d, i) {
         let room = d3.select(this).attr('id');
-        d3.select(this).attr('data-toggle', 'tooltip');
-        d3.select(this).attr('title', room.charAt(0).toUpperCase() + room.slice(1));
-        $('[data-toggle="tooltip"]').tooltip();
         $.get(`/stuart/${room.split('-')[1]}`).then((room) => {
           let higherCount = 0;
+          let hcount = 0;
+          let lcount = 0;
           room.complaints.forEach((complaint) => {
             if (complaint.higher) {
               higherCount += 1;
+              hcount += 1;
             } else {
               higherCount -= 1;
+              lcount += 1;
             }
           });
+          d3.select(this).attr('data-toggle', 'tooltip');
+          d3.select(this).attr('data-html', 'true');
+          d3.select(this).attr('title', `${room.roomNumber}: <span class="badge badge-pill badge-danger"><i class="fas fa-arrow-alt-circle-up"></i></span> ${hcount} <span class="badge badge-pill badge-primary"><i class="fas fa-arrow-alt-circle-down"></i></span> ${lcount}`);
+          $('[data-toggle="tooltip"]').tooltip();
           if (higherCount > 0) {
             d3.select(this).style("fill-opacity", "0")
                            .style('fill', 'red')
