@@ -40,8 +40,11 @@ function renderSVG (mobile, svgName, initialRender) {
       svg.attr('height', !mobile ? '87vh' : '100%');
       
       svg.selectAll('path').each(function (d, i) {
-        let room = d3.select(this).attr('id').split('-')[1];
-        $.get(`/stuart/${room}`).then((room) => {
+        let room = d3.select(this).attr('id');
+        d3.select(this).attr('data-toggle', 'tooltip');
+        d3.select(this).attr('title', room.charAt(0).toUpperCase() + room.slice(1));
+        $('[data-toggle="tooltip"]').tooltip();
+        $.get(`/stuart/${room.split('-')[1]}`).then((room) => {
           let higherCount = 0;
           room.complaints.forEach((complaint) => {
             if (complaint.higher) {
