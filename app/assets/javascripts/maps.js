@@ -21,12 +21,71 @@ $(document).ready(function() {
 
   const mobile = $(window).width() <= 500;
   renderSVG(mobile, $('#floor').select2('data')[0].text, true);
+  
+  $('.sw').change(function () {
+    if ($(this).is(':checked')) {
+      renderMockBeacons();
+    } else {
+      d3.selectAll('circle').remove();
+    }
+  });
 
   $('#floor').on('select2:select', function (e) {
       var data = e.params.data;
       renderSVG(mobile, data.text, false);
   });
 });
+
+function getRandomNumber(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function renderMockBeacons() {
+  const viewBox = d3.select('svg').attr('viewBox').split(" ");
+  const width = parseInt(viewBox[2], 10) - 200;
+  const height = parseInt(viewBox[3], 10) - 200;
+  let i;
+  for (i = 0; i < 10; i++) { 
+    renderBeacon(getRandomNumber(200, width), getRandomNumber(100, height), Math.floor(getRandomNumber(0, 50)));
+  }
+}
+
+function renderBeacon (x, y, temp) {
+  d3.select('svg').append('circle')
+                  .attr("cx", x)
+                  .attr("cy", y)
+                  .attr("r", 15)
+                  .attr("data-toggle", "tooltip")
+                  .attr("title", `Temperature: ${temp}°C`);
+  $('circle[data-toggle="tooltip"]').tooltip();
+  
+  d3.select('svg').append('circle')
+                  .attr("cx", x)
+                  .attr("cy", y)
+                  .attr("r", 0)
+                  .on('mouseover', function() {
+                    d3.select(this).transition()
+                                   .duration(300)
+                                   .attr("r", "100");
+                    $('circle[data-toggle="tooltip"]').tooltip();
+                    $('circle[data-toggle="tooltip"]').tooltip("show");
+                  })
+                  .on('mouseout', function () {
+                    d3.select(this).transition()
+                                   .duration(300)
+                                   .attr("r", "50");
+                    $('circle[data-toggle="tooltip"]').tooltip("hide");
+                  })
+                  .style("fill", "blue")
+                  .style("fill-opacity", "0.5")
+                  .style("stroke", "black")
+                  .style("stroke-dasharray", "80, 50")
+                  .style("stroke-width", "8")
+                  .transition()
+                  .duration(300)
+                  .attr("r", 50)
+                  .attr("transform", "rotate(180deg)");
+  }
 
 function renderSVG (mobile, svgName, initialRender) {
   const svgPath = !mobile ? `/svg/${svgName}-R.svg` : `/svg/${svgName}.svg`;
