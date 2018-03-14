@@ -43,14 +43,12 @@
           %label{:for => "tempOptions"} Temperature Request
           .row
             .btn-group.btn-group-toggle#tempOptions{"data-toggle" => "buttons", :style => "width: 50%; margin: 0 auto;"}
-              %label.btn.btn-success.active{:style => "width: 100%;"}
+              %label.btn.btn-danger.active{:style => "width: 100%;"}
                 %input#option1{:autocomplete => "off", :checked => true, :name => "higher", :type => "radio", :value => "higher"}/
                 <i class="fas fa-arrow-alt-circle-up"></i>
-              %label.btn.btn-danger{:style => "width: 100%;"}
+              %label.btn.btn-primary{:style => "width: 100%;"}
                 %input#option2{:autocomplete => "off", :name => "higher", :type => "radio", :value => "lower"}/
                 <i class="fas fa-arrow-alt-circle-down"></i>
-
-
           .form-group
             %label{:for => "exampleFormControlTextarea1"} More information
             %textarea#exampleFormControlTextarea1.form-control{:rows => "3", :name => "complaint"}
