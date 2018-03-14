@@ -40,6 +40,15 @@ function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+function returnRGBColor(temp) {
+  let max = 50;
+  let avg = temp/max;
+  let red = Math.round(avg*255);
+  let green = avg >= 0.5 ? 1 : 0;
+  let blue = Math.round((1 - avg) * 255);
+  return `rgb(${red}, ${green}, ${blue})`
+}
+
 function renderMockBeacons() {
   const viewBox = d3.select('svg').attr('viewBox').split(" ");
   const width = parseInt(viewBox[2], 10) - 200;
@@ -76,8 +85,8 @@ function renderBeacon (x, y, temp) {
                                    .attr("r", "50");
                     $('circle[data-toggle="tooltip"]').tooltip("hide");
                   })
-                  .style("fill", "blue")
-                  .style("fill-opacity", "0.5")
+                  .style("fill", returnRGBColor(temp))
+                  .style("fill-opacity", "0.6")
                   .style("stroke", "black")
                   .style("stroke-dasharray", "80, 50")
                   .style("stroke-width", "8")
