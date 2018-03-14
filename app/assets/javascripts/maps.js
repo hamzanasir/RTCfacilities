@@ -128,13 +128,13 @@ function renderSVG (mobile, svgName, initialRender) {
           $('[data-toggle="tooltip"]').tooltip();
           if (higherCount > 0) {
             d3.select(this).style("fill-opacity", "0")
-                           .style('fill', 'red')
+                           .style('fill', 'blue')
                            .transition()
                            .duration(300)
                            .style("fill-opacity", "0.59");
           } else if (higherCount < 0) {
             d3.select(this).style("fill-opacity", "0")
-                           .style('fill', 'blue')
+                           .style('fill', 'red')
                            .transition()
                            .duration(300)
                            .style("fill-opacity", "0.59");
