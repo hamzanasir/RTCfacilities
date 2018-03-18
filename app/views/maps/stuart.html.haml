@@ -22,7 +22,7 @@
             = link_to 'Home', root_path, class: 'nav-link'
         %select#floor{:style => "width: 27%;"}
           %option{:value => "0"} SB-00
-          %option{:value => "1"} SB-01
+          %option{:value => "1", :selected => "true"} SB-01
           %option{:value => "2"} SB-02
   - if @flash.key?('success')
     .alert.alert-success.container{:role => "alert", :style => "margin-top: 25px;"}
