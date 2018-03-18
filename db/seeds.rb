@@ -13,14 +13,20 @@ Room.delete_all
 Building.delete_all
 
 buildings = {
-  'Stuart' => 'SB',
+  'Stuart' => {
+    'SB' => ['00', '01']
+  }
 }
 
-buildings.each do |building, initial|
-  new_building = Building.create(:name => building, :initial => initial)
-  doc = Nokogiri::XML(File.open("public/svg/#{initial}-01.svg"))
-  doc.css('svg path').each do |room|
-    roomNum = initial + '-' + room['id'].split('-', 2)[1].strip()
-    Room.create(:roomNumber => roomNum, :building => new_building)
+buildings.each do |building, floors|
+  new_building = Building.create(:name => building, :initial => floors.keys[0])
+  floors.each do |initial, floors_arr|
+    floors_arr.each do |floor|
+      doc = Nokogiri::XML(File.open("public/svg/#{initial}-#{floor}.svg"))
+      doc.css('svg path').each do |room|
+        roomNum = initial + '-' + room['id'].split('-', 2)[1].strip()
+        Room.create(:roomNumber => roomNum, :building => new_building)
+      end
+    end
   end
 end
