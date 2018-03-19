@@ -15,6 +15,7 @@
   
   path {
     cursor: pointer;
+    opacity: 1;
   }
   
   circle {
@@ -26,7 +27,7 @@
   }
 
   #svgContainer {
-    padding-top: 36px;
+    padding-top: 15px;
   }
 
   @media only screen and (max-width: 500px) {
