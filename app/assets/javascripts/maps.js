@@ -46,7 +46,7 @@ function returnRGBColor(temp) {
   let red = Math.round(avg*255);
   let green = avg >= 0.5 ? 1 : 0;
   let blue = Math.round((1 - avg) * 255);
-  return `rgb(${red}, ${green}, ${blue})`
+  return `rgb(${red}, ${green}, ${blue})`;
 }
 
 function renderMockBeacons() {
@@ -63,27 +63,25 @@ function renderBeacon (x, y, temp) {
   d3.select('svg').append('circle')
                   .attr("cx", x)
                   .attr("cy", y)
-                  .attr("r", 15)
-                  .attr("data-toggle", "tooltip")
-                  .attr("title", `Temperature: ${temp}°C`);
-  $('circle[data-toggle="tooltip"]').tooltip();
+                  .attr("r", 15);
   
   d3.select('svg').append('circle')
                   .attr("cx", x)
                   .attr("cy", y)
                   .attr("r", 0)
+                  .attr("data-toggle", "tooltip")
+                  .attr("title", `Temperature: ${temp}°C`)
                   .on('mouseover', function() {
                     d3.select(this).transition()
                                    .duration(300)
                                    .attr("r", "100");
-                    $('circle[data-toggle="tooltip"]').tooltip();
-                    $('circle[data-toggle="tooltip"]').tooltip("show");
+                    $(this).tooltip();
+                    $(this).tooltip('show');
                   })
                   .on('mouseout', function () {
                     d3.select(this).transition()
                                    .duration(300)
                                    .attr("r", "50");
-                    $('circle[data-toggle="tooltip"]').tooltip("hide");
                   })
                   .style("fill", returnRGBColor(temp))
                   .style("fill-opacity", "0.6")
@@ -147,7 +145,7 @@ function renderSVG (mobile, svgName, initialRender) {
       $('path').click(function(e) {
         $('[data-toggle="tooltip"]').tooltip('hide');
         $('#submitReport form').attr('action', `/stuart/${e.target.id.split('-')[1]}`);
-        $('#submitReport').modal({show: true})
+        $('#submitReport').modal({show: true});
       });
       if (!initialRender) {
         $('.alert').remove();
