@@ -100,6 +100,7 @@ function renderSVG (mobile, svgName, initialRender) {
   const svgPath = !mobile ? `/svg/${svgName}-R.svg` : `/svg/${svgName}.svg`;
 
   d3.xml(svgPath, function(xml) {
+    $('[data-toggle="tooltip"]').tooltip('hide');
     try {
       $('#svgContainer').empty();
       $('#svgContainer').append(xml.documentElement);
@@ -125,7 +126,7 @@ function renderSVG (mobile, svgName, initialRender) {
           d3.select(this).attr('data-toggle', 'tooltip');
           d3.select(this).attr('data-html', 'true');
           d3.select(this).attr('title', `${room.roomNumber}: <span class="badge badge-pill badge-danger"><i class="fas fa-arrow-alt-circle-up"></i></span> ${hcount} <span class="badge badge-pill badge-primary"><i class="fas fa-arrow-alt-circle-down"></i></span> ${lcount}`);
-          $('[data-toggle="tooltip"]').tooltip();
+          $(this).tooltip();
           if (higherCount > 0) {
             d3.select(this).style("fill-opacity", "0")
                            .style('fill', 'blue')
