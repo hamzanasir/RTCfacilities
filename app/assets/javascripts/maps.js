@@ -145,6 +145,7 @@ function renderSVG (mobile, svgName, initialRender) {
         });
       });
       $('path').click(function(e) {
+        $('[data-toggle="tooltip"]').tooltip('hide');
         $('#submitReport form').attr('action', `/stuart/${e.target.id.split('-')[1]}`);
         $('#submitReport').modal({show: true})
       });
