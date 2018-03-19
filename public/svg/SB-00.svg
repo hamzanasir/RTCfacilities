@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -61,7 +61,7 @@
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0"
      inkscape:zoom="0.40455079"
-     inkscape:cx="747.30039"
+     inkscape:cx="302.36244"
      inkscape:cy="976.50796"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
@@ -83,246 +83,246 @@
      y="0"
      clip-path="url(#clipPath5328)"
      transform="translate(-492.53899,-340.38878)"
-     style="fill:none" />
+     style="fill:none;opacity:1" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 203.14279,196.93988 h 232.46822 v 244.7034 H 203.14279 Z"
      id="room-003D" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 280.04965,445.13901 H 435.6111 V 679.3551 H 280.04965 Z"
      id="room-003C" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 435.61101,196.93989 H 1645.1449 l -1.7479,241.2076 120.6039,1.7479 v 244.7034 H 435.61101 Z"
      id="room-000"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 442.60263,777.23657 H 575.4416 v 148.5699 H 442.60263 Z"
      id="room-006B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 575.44147,777.23657 h 134.58685 v 148.5699 H 575.44147 Z"
      id="room-006A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 444.35043,925.80646 H 710.02838 V 1041.1667 H 444.35043 Z"
      id="room-006" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 444.35043,1041.1667 h 265.67795 v 227.2246 H 444.35043 Z"
      id="room-004" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 444.35041,1275.0266 c 265.678,0 265.678,0 265.678,0 v 113.7064 h -197.7491 l 2.4718,126.0657 h -70.4007 z"
      id="room-003"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 444.35043,1514.7988 h 265.67795 v 112.4705 H 444.35043 Z"
      id="room-008" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 444.35041,1633.6984 h 245.5774 v 249.947 h -112.7384 l 0.8739,-117.982 -133.7129,-1.7479 z"
      id="room-018"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1;stroke-width:1.02382219"
+     style="opacity:1;fill:none;fill-opacity:1;stroke-width:1.02382219"
      d="m 444.35043,1768.2854 h 127.59534 v 120.9219 H 444.35043 Z"
      id="room-019C" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 444.35041,1889.763 h 247.3252 v 53.3104 l -16.6048,-0.874 1.7478,173.9142 h -232.4682 z"
      id="room-019"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 444.35043,2116.1135 h 132.83898 v 242.0816 H 444.35043 Z"
      id="room-019B" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 577.18941,2116.1136 h 128.4693 l 0.8739,124.9735 153.8136,0.874 v 116.2341 h -283.1568 z"
      id="room-019A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 705.70367,2116.1135 h 154.64252 v 121.0913 H 705.70367 Z"
      id="room-019E" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 676.65912,1944.9056 h 183.68707 v 171.2082 H 676.65912 Z"
      id="room-019D" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 690.87241,1630.359 h 103.8189 v 106.2907 l -59.3251,-1.2359 -1.2359,209.4916 h -43.2579 z"
      id="room-017"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 794.69122,1630.3591 h 66.7407 v 103.8189 h -66.7407 z"
      id="room-017A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 736.60211,1734.178 h 123.74402 v 210.7275 H 736.60211 Z"
      id="room-017B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 861.43195,1885.5806 h 304.65895 v 472.1286 H 861.43195 Z"
      id="room-014" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 925.08282,1729.8523 h 241.00808 v 155.7283 H 925.08282 Z"
      id="room-014A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 862.04987,1630.9771 h 63.03287 v 254.6033 h -63.03287 z"
      id="room-014D" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 947.32965,1630.9771 h 86.51565 v 100.111 h -86.51565 z"
      id="room-014C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1033.8455,1630.9771 h 87.7517 v 100.111 h -87.7517 z"
      id="room-014B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1383.6161,2180.9697 h 260.7831 v 177.9752 h -260.7831 z"
      id="room-016C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1472.9786,2064.551 h 171.4206 v 116.4186 h -171.4206 z"
      id="room-016B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1379.4669,2126.6008 h 93.5116 v 54.3689 h -93.5116 z"
      id="room-016A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1379.4669,2047.0726 h 93.5116 v 79.5286 h -93.5116 z"
      id="room-016" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1472.9786,1823.3438 h 171.2924 v 241.2076 h -171.2924 z"
      id="room-015C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1958.8046 h 90.0159 v 88.268 h -90.0159 z"
      id="room-015D" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1472.9786,1871.4102 v 87.3941 h -90.0159 v -60.3019 h 34.0837 v -27.0922 z"
      id="room-015E"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1822.4697 h 90.0159 v 48.9407 h -90.0159 z"
      id="room-015F" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1649.4294 h 262.1822 v 173.0403 h -262.1822 z"
      id="room-015" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1458.9104 h 143.3263 v 190.5191 h -143.3263 z"
      id="room-013A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1295.4834 h 143.3263 v 163.427 h -143.3263 z"
      id="room-013B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1526.2889,1295.4834 h 119.7299 v 354.8199 h -119.7299 z"
      id="room-013C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.0887,1160.0227 h 109.2426 v 135.4608 h -109.2426 z"
      id="room-011" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1491.3314,1160.0227 h 154.6875 v 135.4608 h -154.6875 z"
      id="room-011A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1485.2137,1042.0406 h 159.9312 v 117.9821 h -159.9312 z"
      id="room-010D" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1382.9628,1042.0406 h 102.2511 v 117.9821 h -102.2511 z"
      id="room-010E" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1528.9108,908.3277 h 116.2342 v 133.7129 h -116.2342 z"
      id="room-010C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1528.9108,777.23657 h 116.2341 v 131.0911 h -116.2341 z"
      id="room-010B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1381.2147,777.23657 h 147.696 v 263.93013 h -147.696 z"
      id="room-010" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1166.2255,774.61475 h 138.9566 v 151.19169 h -138.9566 z"
      id="room-007E" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 789.55695,774.61475 H 932.88321 V 925.80644 H 789.55695 Z"
      id="room-007B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 932.88324,774.61475 h 116.23416 v 89.1419 H 932.88324 Z"
      id="room-007C" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1049.1174,774.61475 h 117.1081 v 89.14187 h -117.1081 z"
      id="room-007D" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 788.68311,1035.049 0.8739,-109.24256 h 143.3263 v -62.04985 h 233.34209 v 62.04985 h 138.9567 l -0.874,109.24256 z"
      id="room-007"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1;stroke-width:1.02020395"
+     style="opacity:1;fill:none;fill-opacity:1;stroke-width:1.02020395"
      d="m 1017.6555,1034.1753 h 62.0498 v 133.7128 h -62.0498 z"
      id="room-001D" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 788.68304,1362.7769 h 129.34322 v 169.5444 H 788.68304 Z"
      id="room-002" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 788.68304,1262.2737 h 129.34322 v 100.5032 H 788.68304 Z"
      id="room-005" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 788.68304,1167.8882 h 76.90678 v 94.3856 h -76.90678 z"
      id="room-005A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 865.58978,1167.8882 h 50.68856 v 94.3856 h -50.68856 z"
      id="room-005B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 916.27838,1167.8882 h 101.37712 v 110.1164 H 916.27838 Z"
      id="room-001B" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1017.6555,1167.8882 h 155.5615 v 110.1165 h -155.5615 z"
      id="room-001A" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 966.96698,1278.0046 H 1173.217 v 120.6039 H 966.96698 Z"
      id="room-001C" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 918.02631,1278.0045 h 48.9407 v 120.6038 H 1173.217 v 131.9651 H 918.02631 Z"
      id="room-001"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1173.217,1344.4241 h 131.965 v 186.1493 h -131.965 z"
      id="room-012" />
 </svg>
