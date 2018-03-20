@@ -34,6 +34,10 @@ $(document).ready(function() {
       var data = e.params.data;
       renderSVG(mobile, data.text, false);
   });
+  
+  $.get('https://crossorigin.me/https://api.darksky.net/forecast/4152be98ca71e28f0d675829b06509f9/41.838543,-87.627276?units=si').then((weather) => {
+    $('#outsideTemperature').text(`${weather.currently.temperature} °C`);
+  });
 });
 
 function getRandomNumber(min, max) {
