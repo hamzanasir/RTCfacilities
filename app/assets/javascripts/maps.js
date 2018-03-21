@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   const mobile = $(window).width() <= 500;
   renderSVG(mobile, $('#floor').select2('data')[0].text, true);
-  
+
   $('.sw').change(function () {
     if ($(this).is(':checked')) {
       renderMockBeacons();
@@ -34,10 +34,10 @@ $(document).ready(function() {
       var data = e.params.data;
       renderSVG(mobile, data.text, false);
   });
-  
+
   $.get('https://crossorigin.me/https://api.darksky.net/forecast/4152be98ca71e28f0d675829b06509f9/41.838543,-87.627276?units=si').then((weather) => {
-    $('#outsideTemperature').text(`${weather.currently.temperature} °C`);
-    $('#outsideHumidity').text(`${weather.currently.humidity * 100}%`);
+    $('#outsideTemperature').text(`${parseInt(weather.currently.temperature, 10)} °C`);
+    $('#outsideHumidity').text(`${parseInt(weather.currently.humidity * 100, 10)}%`);
   });
 });
 
@@ -59,7 +59,7 @@ function renderMockBeacons() {
   const width = parseInt(viewBox[2], 10) - 200;
   const height = parseInt(viewBox[3], 10) - 200;
   let i;
-  for (i = 0; i < 10; i++) { 
+  for (i = 0; i < 10; i++) {
     renderBeacon(getRandomNumber(200, width), getRandomNumber(100, height), Math.floor(getRandomNumber(0, 50)));
   }
 }
@@ -69,7 +69,7 @@ function renderBeacon (x, y, temp) {
                   .attr("cx", x)
                   .attr("cy", y)
                   .attr("r", 15);
-  
+
   d3.select('svg').append('circle')
                   .attr("cx", x)
                   .attr("cy", y)
@@ -110,7 +110,7 @@ function renderSVG (mobile, svgName, initialRender) {
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', !mobile ? '87vh' : '100%');
-      
+
       svg.selectAll('path').each(function (d, i) {
         let room = d3.select(this).attr('id');
         $.get(`/stuart/${room.split('-')[1]}`).then((room) => {
