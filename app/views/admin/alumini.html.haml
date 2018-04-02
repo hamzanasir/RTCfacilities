@@ -1,2 +1,31 @@
-%h1 Admin#alumini
-%p Find me in app/views/admin/alumini.html.haml
+.card{:style => "margin: 15px;"}
+  .card-body
+    .row
+      .adminRoomNumber.col-md-2.font-weight-bold
+        %h5 Room Number
+      .col-md-2
+        %h5 Request Submitted At
+      .col-md-4{:style => "text-align: center;"}
+        %h5 Complaint
+      .col-md-2
+        %h5 Requested Temperature
+      .col-md-2{:style => "text-align: center;"}
+        %h5 Delete
+
+- @rooms.each do |room|
+  - if room.complaints.length > 0
+    - room.complaints.each do |complaint|
+      .card{:style => "margin: 15px;"}
+        .card-body
+          .row
+            .adminRoomNumber.col-md-2.font-weight-bold
+              = room.roomNumber
+            .col-md-2
+              = room.created_at
+            .col-md-4{:style => "text-align: center;"}
+              = complaint.complaint
+            .col-md-2
+              = complaint.higher ? "Higher" : "Lower"
+            .deleteComplaint.col-md-2{:style => "text-align: center;", "data-id" => "#{complaint.id}"}
+              .btn.btn-danger{:style => "width: 29%;"}
+                %i.fas.fa-trash
