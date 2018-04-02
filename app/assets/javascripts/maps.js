@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
   $('#floor').select2();
+  $('#room').select2();
 
   var meny = Meny.create({
   	menuElement: document.querySelector( '.meny' ),
@@ -31,8 +32,15 @@ $(document).ready(function() {
   });
 
   $('#floor').on('select2:select', function (e) {
-      var data = e.params.data;
-      renderSVG(mobile, data.text, false);
+    var data = e.params.data;
+    renderSVG(mobile, data.text, false);
+  });
+  
+  $('#room').on('select2:select', function (e) {
+    const currentPath = window.location.pathname;
+    const data = e.params.data;
+    $('#submitReport form').attr('action', `${currentPath}/${data.id.split('-')[1]}`);
+    $('#submitReport').modal({show: true});
   });
 
   $.get('https://crossorigin.me/https://api.darksky.net/forecast/4152be98ca71e28f0d675829b06509f9/41.838543,-87.627276?units=si').then((weather) => {

@@ -13,6 +13,11 @@
       %li
         Outside Humidity: 
         %span#outsideHumidity N/A
+      %li
+        %select#room{"data-live-search" => "true"}
+          - @rooms.each do |room|
+            %option{"data-tokens" => "#{room.roomNumber.split('-')[1]}"}
+              = room.roomNumber
 
 %div.meny-arrow
 

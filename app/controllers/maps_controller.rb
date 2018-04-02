@@ -5,6 +5,8 @@ class MapsController < ApplicationController
     else
       @flash = params[:flash]
     end
+    building = Building.where(name: 'Stuart').take
+    @rooms = building.rooms
   end
   
   def stuart_room
@@ -35,6 +37,8 @@ class MapsController < ApplicationController
     else
       @flash = params[:flash]
     end
+    building = Building.where(name: 'Alumini').take
+    @rooms = building.rooms
   end
   
   def alumini_room

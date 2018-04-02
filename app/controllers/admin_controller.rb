@@ -3,7 +3,6 @@ class AdminController < ApplicationController
   end
 
   def stuart
-    @room_complaints = {}
     building = Building.where(name: 'Stuart').take
     @rooms = building.rooms.includes(:complaints)
   end
@@ -18,7 +17,6 @@ class AdminController < ApplicationController
   end
 
   def alumini
-    @room_complaints = {}
     building = Building.where(name: 'Alumini').take
     @rooms = building.rooms.includes(:complaints)
   end
