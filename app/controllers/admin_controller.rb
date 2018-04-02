@@ -18,5 +18,8 @@ class AdminController < ApplicationController
   end
 
   def alumini
+    @room_complaints = {}
+    building = Building.where(name: 'Alumini').take
+    @rooms = building.rooms.includes(:complaints)
   end
 end
