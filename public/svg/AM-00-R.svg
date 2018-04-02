@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,7 +59,7 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.25927248"
-     inkscape:cx="1089.8666"
+     inkscape:cx="858.5725"
      inkscape:cy="1240.3692"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
@@ -75,34 +75,34 @@
      y="0"
      clip-path="url(#clipPath1108)"
      transform="rotate(90,2049.6846,1068.1627)"
-     style="fill:none" />
+     style="fill:none;opacity:1" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2928.5473,94.566055 V 418.54951 h -320.2 V 94.566055 Z"
      id="room-004"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2928.5473,418.54954 V 557.3996 h -237.3 V 418.54954 Z"
      id="room-003"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2928.5473,557.39958 v 403.05087 h -29 l -2,82.92435 h -283.5 V 557.39958 Z"
      id="room-002"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2614.0473,94.566055 v 92.566715 h -96.4 V 94.566055 Z"
      id="room-006"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2614.0473,529.49265 v 513.88215 h -320.1 l 0,-513.88215 z"
      id="room-001"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2293.9473,187.13277 v 205.99627 h -210.8 V 187.13277 Z"
      id="room-005A"
      inkscape:connector-curvature="0" />

@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,7 +59,7 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.23939394"
-     inkscape:cx="881.20352"
+     inkscape:cx="129.30479"
      inkscape:cy="1555.3852"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
@@ -75,189 +75,189 @@
      y="0"
      clip-path="url(#clipPath81)"
      transform="rotate(90,1937.4367,983.38611)"
-     style="fill:none" />
+     style="fill:none;opacity:1" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2713.7335,10.354402 -165.4093,0 V 320.49681 h 165.4093 z"
      id="room-228b"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2713.7335,320.49681 c -165.4093,0 -165.4093,0 -165.4093,0 v 148.84448 h 165.4093 V 318.96154 Z"
      id="room-228c"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2713.7335,469.34129 h -165.4093 v 146.52924 h 165.4093 z"
      id="room-228d"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2713.7335,615.87053 h -165.4093 v 310.1424 l 171.9923,8.03776 z"
      id="room-228e"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2548.3242,695.62143 h -144.7331 v 230.3915 h 144.7331 z"
      id="room-228f"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2548.3242,10.354402 -144.7331,0 V 223.02348 l 144.7331,0 z"
      id="room-228a"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2548.3242,223.02348 -144.7331,0 v 472.59795 h 144.7331 z"
      id="room-228"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2403.5911,612.91679 h -301.2812 v 316.04988 h 301.2812 z"
      id="room-222"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2249.9967,10.354402 153.5944,0 V 223.02348 h -153.5944 z"
      id="room-229"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2249.9967,10.354402 -147.6868,0 V 223.02348 h 147.6868 z"
      id="room-230"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1801.0287,10.354402 -144.7331,0 V 214.16227 h 144.7331 z"
      id="room-216"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1656.2956,10.354402 -147.6869,0 V 214.16227 l 147.6869,0 z"
      id="room-215"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1360.9218,10.354402 147.6869,0 V 214.16227 h -147.6869 z"
      id="room-214"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1360.9218,10.354402 -150.6406,0 V 214.16227 h 150.6406 z"
      id="room-213"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1210.2812,10.354402 -147.6868,0 V 214.16227 l 147.6868,0 z"
      id="room-212"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1062.5944,10.354402 -147.6869,0 V 214.16227 h 147.6869 z"
      id="room-211"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 613.6263,10.354402 -144.7331,0 V 223.02348 h 144.7331 z"
      id="room-204"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 468.8932,10.354402 -147.6869,0 V 172.80995 h 147.6869 z"
      id="room-203b"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 321.2063,10.354402 -150.6405,0 -1e-4,162.455548 h 150.6406 z"
      id="room-203c"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 170.5658,10.354402 -159.5019,0 V 320.49681 h 159.5019 z"
      id="room-203a"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 468.8932,172.80995 H 170.5657 l 1e-4,147.68686 298.3274,0 z"
      id="room-203"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 468.8932,320.49681 -180.178,0 v 292.41998 h 180.178 z"
      id="room-202"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 288.7152,320.49681 H 11.0639 L 8.1102,468.18367 H 71.9621 V 444.278 l 216.7531,2.08861 z"
      id="room-202a"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 288.7152,617.63243 V 444.278 H 71.9621 v 23.90567 H 8.1102 v 149.44876 z"
      id="room-202b"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 468.7975,928.83496 V 617.63243 H 8.1102 v 311.20253 z"
      id="room-201a"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 617.0887,928.83496 V 774.278 H 468.7975 v 154.55696 z"
      id="room-201b"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 617.0887,412.94889 H 468.7975 V 774.278 h 148.2912 z"
      id="room-201"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 913.6709,321.05015 H 617.0887 v 419.81013 h 296.5822 z"
      id="room-209"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1210.2532,928.83496 H 617.0887 V 740.86028 H 913.6709 V 544.53117 h 152.4684 v 73.10126 h 144.1139 z"
      id="room-210"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1508.9241,928.83496 V 617.63243 h -298.6709 v 311.20253 z"
      id="room-221"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1657.2152,928.83496 H 1508.9241 V 617.63243 h 148.2911 z"
      id="room-220c"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1955.8861,928.83496 V 617.63243 l -298.6709,0 v 311.20253 z"
      id="room-220b"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2102.0887,928.83496 v -248.5443 h -146.2026 v 248.5443 z"
      id="room-220a"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2102.0887,617.63243 v 62.65823 h -146.2026 v -62.65823 z"
      id="room-220"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2031.076,321.05015 h -522.1519 v 296.58228 l 522.1519,0 z"
      id="room-218"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1061.9621,321.05015 v 296.58228 h 446.962 V 321.05015 Z"
      id="room-217"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 1053.7033,403.01639 H 911.9239 v 64.98222 h 141.7794 z"
      id="room-209a"
      inkscape:connector-curvature="0" />

@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,7 +70,7 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.27200411"
-     inkscape:cx="671.66559"
+     inkscape:cx="9.9108834"
      inkscape:cy="450.31819"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
@@ -87,144 +87,144 @@
      y="0"
      clip-path="url(#clipPath5776)"
      transform="rotate(90,1966.1692,1021.4179)"
-     style="fill:none" />
+     style="fill:none;opacity:1" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2699.0416,15.143101 -1.5822,305.377919 h -151.8978 l -1.5823,-302.213379 z"
      id="room-127"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2542.8148,15.143101 V 225.58487 l -144.9528,0 V 15.143101 Z"
      id="room-128"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2699.4594,320.52102 V 470.83657 H 2542.8148 V 320.52102 Z"
      id="room-120B"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2699.4594,692.35421 V 928.11232 H 2542.8148 V 692.35421 Z"
      id="room-124"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2542.8148,692.35421 V 928.11232 H 2246.9305 V 692.35421 Z"
      id="room-123"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 2242.1838,619.56985 V 928.11232 H 2102.9441 V 619.56985 Z"
      id="room-122"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2102.9441,698.68332 v 229.429 h -151.8978 v -229.429 z"
      id="room-119A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="M 2699.4594,470.83657 V 692.35421 L 2250.095,689.18969 V 323.68556 l 294.302,10e-6 -1.5822,147.151 z"
      id="room-120"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2248.5127,519.88693 v 88.60706 h -140.8219 v -88.60706 z"
      id="room-120A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 2248.5127,429.6976 v 75.94891 h -147.151 V 429.6976 Z"
      id="room-121"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2095.0326,323.68556 7.9115,374.99776 h -151.8979 v 229.429 l -446.1999,-1.5823 V 632.22801 l 295.8843,3.16454 1.5823,-311.70699 z"
      id="room-119"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 1799.1484,13.560841 V 173.37 l -439.8707,0 V 13.560841 Z"
      id="room-114"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 1799.1484,173.36999 v 458.858 l -294.302,0 v -458.858 z"
      id="room-118"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 1357.3473,12.990601 V 173.36999 h -147.686 V 12.990601 Z"
      id="room-113"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 1505.0334,173.36999 V 635.06182 H 914.2895 V 173.36999 Z"
      id="room-117"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 1209.6612,17.465931 V 173.36998 l -295.3719,0 V 17.465931 Z"
      id="room-111"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 907.5763,321.78855 6.7131,313.27331 h 590.7439 l -2.2378,290.89656 H 616.6797 V 321.78855 Z"
      id="room-116"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 616.6797,626.11117 V 925.95842 H 468.9937 V 626.11117 Z"
      id="room-101C"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 468.9937,717.8555 V 925.95842 H 323.5454 V 717.8555 Z"
      id="room-101B"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 323.5454,621.63583 V 929.72462 H 3.8567 V 621.63583 Z"
      id="room-101A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 618.9173,375.49255 V 626.11119 H 468.9937 V 375.49255 Z"
      id="room-101E"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 466.7559,375.49255 V 715.61782 H 319.07 V 375.49255 Z"
      id="room-101"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 319.0701,324.02621 v 293.13428 h -134.26 V 324.02621 Z"
      id="room-102"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 184.8101,469.47451 V 617.16049 H 8.0345 V 469.47451 Z"
      id="room-102B"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 184.8101,324.02621 v 145.4483 H 8.0345 v -145.4483 z"
      id="room-102A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 175.8594,12.990601 V 324.02621 H 8.0345 V 12.990601 Z"
      id="room-103A"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="M 323.5454,12.990601 V 324.02621 H 175.8595 V 12.990601 Z"
      id="room-103"
      inkscape:connector-curvature="0" />
   <path
-     style="opacity:0.6;fill:none;fill-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1"
      d="m 614.4419,324.02621 v 51.46634 H 468.9936 v -51.46634 z"
      id="room-101F"
      inkscape:connector-curvature="0" />
