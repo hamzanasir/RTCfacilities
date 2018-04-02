@@ -1,10 +1,18 @@
 %div.meny
   %div.sidecontents
-    %h3 Beacons
+    %h3 Advanced
     %ul
-      %li Beacon 1
-      %li Beacon 2
-      %li Beacon 3
+      %li
+        %label{:for => "toggle-2", :style => "margin-right: 4px;"} Mock Beacons 
+        %input#toggle-2.sw{:name => "toggle", :type => "checkbox"}/
+        %label{:for => "toggle-2"}
+          %span
+      %li
+        Outside Temperature: 
+        %span#outsideTemperature N/A
+      %li
+        Outside Humidity: 
+        %span#outsideHumidity N/A
 
 %div.meny-arrow
 
@@ -19,5 +27,43 @@
           %li.nav-item.active
             = link_to 'Home', root_path, class: 'nav-link'
         %select#floor{:style => "width: 27%;"}
-          %option{:value => "1"} AM-01
+          %option{:value => "0"} AM-00
+          %option{:value => "1", :selected => "true"} AM-01
           %option{:value => "2"} AM-02
+  - if @flash.key?('success')
+    .alert.alert-success.container{:role => "alert", :style => "margin-top: 25px;"}
+      = @flash[:success]
+  - elsif @flash.key?('error')
+    .alert.alert-error.container{:role => "alert", :style => "margin-top: 25px;"}
+      = @flash[:error]
+
+  %div#svgContainer
+
+/ Modal
+#submitReport.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "submitReportLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5#submitReportLabel.modal-title Submit Request
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        %form{:action => "", :method => "POST"}
+          %label{:for => "tempOptions"} Temperature Request
+          .row
+            .btn-group.btn-group-toggle#tempOptions{"data-toggle" => "buttons", :style => "width: 50%; margin: 0 auto;"}
+              %label.btn.btn-danger.active{:style => "width: 100%;"}
+                %input#option1{:autocomplete => "off", :checked => true, :name => "higher", :type => "radio", :value => "higher"}/
+                <i class="fas fa-arrow-alt-circle-up"></i>
+              %label.btn.btn-primary{:style => "width: 100%;"}
+                %input#option2{:autocomplete => "off", :name => "higher", :type => "radio", :value => "lower"}/
+                <i class="fas fa-arrow-alt-circle-down"></i>
+          .form-group
+            %label{:for => "exampleFormControlTextarea1"} More information
+            %textarea#exampleFormControlTextarea1.form-control{:rows => "3", :name => "complaint"}
+
+          .modal-footer
+            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+            %button.btn.btn-primary{:type => "submit"} Submit changes
+
+
