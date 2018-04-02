@@ -114,8 +114,8 @@ function renderSVG (mobile, svgName, initialRender) {
   d3.xml(svgPath, function(xml) {
     $('[data-toggle="tooltip"]').tooltip('hide');
     try {
-      $('#svgContainer').empty();
-      $('#svgContainer').append(xml.documentElement);
+      $('.svgContainer').empty();
+      $('.svgContainer').append(xml.documentElement);
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', !mobile ? '87vh' : '100%');

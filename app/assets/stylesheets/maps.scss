@@ -26,13 +26,24 @@
     padding: 0;
   }
 
-  #svgContainer {
+  .svgContainer {
     padding-top: 15px;
+  }
+  
+  #aluminiSvg {
+    padding: 0 51px;
   }
 
   @media only screen and (max-width: 500px) {
-    #svgContainer {
+    body {
+      height: 100%;
+    }
+    .svgContainer {
       padding: 36px;
+    }
+    
+    #aluminiSvg {
+      padding: 17px 47px;
     }
   }
 
