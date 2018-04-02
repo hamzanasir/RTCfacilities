@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   post '/stuart/:roomNumber', to: 'maps#stuart_room_post'
 
   get '/alumini', to: 'maps#alumini', as: 'alumini'
+  
+  get '/alumini/:roomNumber', to: 'maps#alumini_room'
+  
+  post '/alumini/:roomNumber', to: 'maps#alumini_room_post'
 
   root 'landing#index'
 
