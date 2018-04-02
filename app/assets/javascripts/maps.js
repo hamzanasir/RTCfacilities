@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   $('#floor').select2();
-  $('#room').select2();
+  $('#room').select2({width: '100%'});
 
   var meny = Meny.create({
   	menuElement: document.querySelector( '.meny' ),
