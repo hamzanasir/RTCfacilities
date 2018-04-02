@@ -37,7 +37,7 @@
     .alert.alert-error.container{:role => "alert", :style => "margin-top: 25px;"}
       = @flash[:error]
 
-  %div#svgContainer
+  %div#svgContainer{:style => "padding: 0 51px;"}
 
 / Modal
 #submitReport.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "submitReportLabel", :role => "dialog", :tabindex => "-1"}
