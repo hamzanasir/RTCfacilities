@@ -15,6 +15,9 @@ Building.delete_all
 buildings = {
   'Stuart' => {
     'SB' => ['00', '01', '02']
+  },
+  'Alumini' => {
+    'AM' => ['00', '01', '02']
   }
 }
 
