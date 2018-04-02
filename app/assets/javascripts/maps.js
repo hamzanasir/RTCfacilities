@@ -100,6 +100,7 @@ function renderBeacon (x, y, temp) {
   }
 
 function renderSVG (mobile, svgName, initialRender) {
+  const currentPath = window.location.pathname;
   const svgPath = !mobile ? `/svg/${svgName}-R.svg` : `/svg/${svgName}.svg`;
 
   d3.xml(svgPath, function(xml) {
@@ -113,7 +114,7 @@ function renderSVG (mobile, svgName, initialRender) {
 
       svg.selectAll('path').each(function (d, i) {
         let room = d3.select(this).attr('id');
-        $.get(`/stuart/${room.split('-')[1]}`).then((room) => {
+        $.get(`${currentPath}/${room.split('-')[1]}`).then((room) => {
           let higherCount = 0;
           let hcount = 0;
           let lcount = 0;
@@ -149,7 +150,7 @@ function renderSVG (mobile, svgName, initialRender) {
       });
       $('path').click(function(e) {
         $('[data-toggle="tooltip"]').tooltip('hide');
-        $('#submitReport form').attr('action', `/stuart/${e.target.id.split('-')[1]}`);
+        $('#submitReport form').attr('action', `${currentPath}/${e.target.id.split('-')[1]}`);
         $('#submitReport').modal({show: true});
       });
       if (!initialRender) {
