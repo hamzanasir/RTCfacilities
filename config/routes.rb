@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+
   get '/admin', to: 'admin#index', as: 'admin'
 
   get '/admin/stuart', as: 'admin_stuart'
@@ -20,6 +22,8 @@ Rails.application.routes.draw do
   post '/alumini/:roomNumber', to: 'maps#alumini_room_post'
 
   root 'landing#index'
+  
+  match 'auth/:provider/callback', to: 'sessions#create', via: [:post,:get]
 
   resources :buildings
 
