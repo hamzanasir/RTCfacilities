@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
   def create
-    puts 'Yayyy it worked'
+    render json: request.env['omniauth.auth'].to_json
   end
 end
