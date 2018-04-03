@@ -3,6 +3,7 @@
 $(document).ready(function() {
   $('#floor').select2();
   $('#room').select2({width: '100%'});
+  customStyles();
 
   var meny = Meny.create({
   	menuElement: document.querySelector( '.meny' ),
@@ -48,6 +49,15 @@ $(document).ready(function() {
     $('#outsideHumidity').text(`${parseInt(weather.currently.humidity * 100, 10)}%`);
   });
 });
+
+// Should figure out a way to do this in css
+function customStyles() {
+
+  // Custom styles for stuart maps
+  if (window.location.pathname === '/stuart') {
+    $('body').height('100vh');
+  }
+}
 
 function getRandomNumber(min, max) {
   return Math.random() * (max - min) + min;
