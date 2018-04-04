@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   get 'sessions/create'
+  
+  get '/login', to: 'sessions#login', as: 'login'
+  
+  get '/logout', to: 'sessions#logout', as: 'logout'
 
   get '/admin', to: 'admin#index', as: 'admin'
 

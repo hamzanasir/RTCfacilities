@@ -1,0 +1,8 @@
+.container{:style => "margin-top: 40px;"}
+  - if flash[:notice]
+    .alert.alert-danger{:role => "alert", :style => "margin: 25px auto;"}
+      = flash[:notice]
+  %h2 You need admin privileges to access this page. Please login with your registered google account.
+  %hr
+  %a{:href => "/auth/google_oauth2"}
+    %img{:src => "google-signin.png", :id => "google-signin"}
