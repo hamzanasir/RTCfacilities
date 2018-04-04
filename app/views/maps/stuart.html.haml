@@ -36,12 +36,12 @@
           %option{:value => "0"} SB-00
           %option{:value => "1", :selected => "true"} SB-01
           %option{:value => "2"} SB-02
-  - if @flash.key?('success')
+  - if flash[:notice]
     .alert.alert-success.container{:role => "alert", :style => "margin-top: 25px;"}
-      = @flash[:success]
-  - elsif @flash.key?('error')
-    .alert.alert-error.container{:role => "alert", :style => "margin-top: 25px;"}
-      = @flash[:error]
+      = flash[:notice]
+  - elsif flash[:error]
+    .alert.alert-danger.container{:role => "alert", :style => "margin-top: 25px;"}
+      = flash[:error]
 
   %div.svgContainer
 

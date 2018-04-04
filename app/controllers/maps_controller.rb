@@ -1,10 +1,5 @@
 class MapsController < ApplicationController
   def stuart
-    if params[:flash] == nil
-      @flash = {}
-    else
-      @flash = params[:flash]
-    end
     building = Building.where(name: 'Stuart').take
     @rooms = building.rooms
   end
@@ -24,19 +19,17 @@ class MapsController < ApplicationController
     complaint.higher = params[:higher] == 'higher'
     complaint.satisfied = false
     complaint.room = Room.where(roomNumber: "SB-#{params[:roomNumber]}").take
+
     if complaint.save
-      redirect_to action: 'stuart', :flash => { :success => "Your request was successfully submitted." }
+      flash[:notice] = "Your request was successfully submitted."
+      redirect_to stuart_url
     else
-      redirect_to action: 'stuart', :flash => { :error => "Request Failed." }
+      flash[:error] = "Request Failed."
+      redirect_to stuart_url
     end
   end
 
   def alumini
-    if params[:flash] == nil
-      @flash = {}
-    else
-      @flash = params[:flash]
-    end
     building = Building.where(name: 'Alumini').take
     @rooms = building.rooms
   end
@@ -56,10 +49,13 @@ class MapsController < ApplicationController
     complaint.higher = params[:higher] == 'higher'
     complaint.satisfied = false
     complaint.room = Room.where(roomNumber: "AM-#{params[:roomNumber]}").take
+
     if complaint.save
-      redirect_to action: 'alumini', :flash => { :success => "Your request was successfully submitted." }
+      flash[:notice] = "Your request was successfully submitted."
+      redirect_to alumini_url
     else
-      redirect_to action: 'alumini', :flash => { :error => "Request Failed." }
+      flash[:error] = "Request Failed."
+      redirect_to alumini_url
     end
   end
 end
