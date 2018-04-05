@@ -21,6 +21,8 @@ class MapsController < ApplicationController
     complaint.room = Room.where(roomNumber: "SB-#{params[:roomNumber]}").take
 
     if complaint.save
+      text = "A request for room #{complaint.room.roomNumber} for Stuart was recieved.\n#{complaint.complaint}"
+      sendSms(text)
       flash[:notice] = "Your request was successfully submitted."
       redirect_to stuart_url
     else
@@ -51,6 +53,8 @@ class MapsController < ApplicationController
     complaint.room = Room.where(roomNumber: "AM-#{params[:roomNumber]}").take
 
     if complaint.save
+      text = "A request for room #{complaint.room.roomNumber} for Alumini was recieved.\n#{complaint.complaint}"
+      sendSms(text)
       flash[:notice] = "Your request was successfully submitted."
       redirect_to alumini_url
     else
