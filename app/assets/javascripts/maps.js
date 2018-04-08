@@ -40,6 +40,7 @@ $(document).ready(function() {
   $('#room').on('select2:select', function (e) {
     const currentPath = window.location.pathname;
     const data = e.params.data;
+    $('#modalRoom').text(`${currentPath.charAt(1).toUpperCase() + currentPath.slice(2)} Room ${data.id.split('-')[1]}`);
     $('#submitReport form').attr('action', `${currentPath}/${data.id.split('-')[1]}`);
     $('#submitReport').modal({show: true});
   });
@@ -52,7 +53,6 @@ $(document).ready(function() {
 
 // Should figure out a way to do this in css
 function customStyles() {
-
   // Custom styles for stuart maps
   if (window.location.pathname === '/stuart') {
     $('body').height('100vh');
@@ -167,8 +167,10 @@ function renderSVG (mobile, svgName, initialRender) {
         });
       });
       $('path').click(function(e) {
+        const room = e.target.id.split('-')[1]
+        $('#modalRoom').text(`${currentPath.charAt(1).toUpperCase() + currentPath.slice(2)} Room ${room}`);
         $('[data-toggle="tooltip"]').tooltip('hide');
-        $('#submitReport form').attr('action', `${currentPath}/${e.target.id.split('-')[1]}`);
+        $('#submitReport form').attr('action', `${currentPath}/${room}`);
         $('#submitReport').modal({show: true});
       });
       if (!initialRender) {

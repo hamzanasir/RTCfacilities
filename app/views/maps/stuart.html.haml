@@ -50,7 +50,9 @@
   .modal-dialog{:role => "document"}
     .modal-content
       .modal-header
-        %h5#submitReportLabel.modal-title Submit Request
+        %h5#submitReportLabel.modal-title
+          Submit Request for
+          %span#modalRoom
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} ×
       .modal-body
