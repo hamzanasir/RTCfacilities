@@ -11,6 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
+   data-width="37.386"
+   data-height="66.675"
    id="svg64"
    width="1490"
    height="2650"
@@ -105,6 +107,7 @@
      style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1316.8671,17.310081 h 160.8228 V 188.57598 h -160.8228 z"
      id="room-217d"
+     class="originTop"
      inkscape:connector-curvature="0" />
   <path
      style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -345,6 +348,7 @@
      style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 9.040386,2482.323 v 159.5018 H 168.54219 l -5.90747,-159.5018 z"
      id="room-236d"
+     class="origin"
      inkscape:connector-curvature="0" />
   <path
      style="opacity:1;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
