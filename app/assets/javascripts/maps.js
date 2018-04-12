@@ -31,6 +31,14 @@ $(document).ready(function() {
       d3.selectAll('circle').remove();
     }
   });
+  
+  $('#showBeacons').change(function () {
+    if ($(this).is(':checked')) {
+      renderRealBeacons(mobile);
+    } else {
+      d3.selectAll('circle').remove();
+    }
+  });
 
   $('#floor').on('select2:select', function (e) {
     var data = e.params.data;
@@ -80,6 +88,21 @@ function renderMockBeacons() {
   for (i = 0; i < 10; i++) {
     renderBeacon(getRandomNumber(200, width), getRandomNumber(100, height), Math.floor(getRandomNumber(0, 50)));
   }
+}
+
+function renderRealBeacons(mobile) {
+  const building = $('#floor').select2('data')[0].text.split('-')[0];
+  const floor = $('#floor').select2('data')[0].text.split('-')[1];
+  // Database correlation for building_id's and Building's. Should do this via API
+  const dbcorrelation = {'AM': 4}
+  console.log(floor);
+  console.log(dbcorrelation[building]);
+  $.get(`https://api.iitrtclab.com/facilities?building_id=${dbcorrelation[building]}&floor=${floor}`).then((beacons) => {
+    console.log(beacons);
+    beacons.forEach(function(beacon) {
+      setBeacon(beacon.x, beacon.y, mobile)
+    });
+  });
 }
 
 function renderBeacon (x, y, temp) {
@@ -237,9 +260,9 @@ function mapY (y) {
 
 function setBeacon(x, y, mobile) {
   if (mobile) {
-    setLocation(mapX(x), mapY(y), 100);
+    renderBeacon(mapX(x), mapY(y), Math.floor(getRandomNumber(0, 50)));
   } else {
     const newX = mapX(parseFloat(d3.select('svg').attr('data-width'), 10)) - mapX(x);
-    setLocation(mapY(y), newX, 100);
+    renderBeacon(mapY(y), newX, Math.floor(getRandomNumber(0, 50)));
   }
 }
