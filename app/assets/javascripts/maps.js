@@ -235,6 +235,11 @@ function mapY (y) {
   return (y - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-function setBeacon(x,y) {
-  setLocation(mapX(x), mapY(y), 100);
+function setBeacon(x, y, mobile) {
+  if (mobile) {
+    setLocation(mapX(x), mapY(y), 100);
+  } else {
+    const newX = mapX(parseFloat(d3.select('svg').attr('data-width'), 10)) - mapX(x);
+    setLocation(mapY(y), newX, 100);
+  }
 }
