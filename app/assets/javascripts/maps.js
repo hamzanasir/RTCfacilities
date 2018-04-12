@@ -24,7 +24,7 @@ $(document).ready(function() {
   const mobile = $(window).width() <= 500;
   renderSVG(mobile, $('#floor').select2('data')[0].text, true);
 
-  $('.sw').change(function () {
+  $('#mockBeacons').change(function () {
     if ($(this).is(':checked')) {
       renderMockBeacons();
     } else {
