@@ -14,6 +14,7 @@
         Outside Humidity: 
         %span#outsideHumidity N/A
       %li
+        #label{:for => "room"} Submit Request for Room
         %select#room{"data-live-search" => "true"}
           - @rooms.each do |room|
             %option{"data-tokens" => "#{room.roomNumber.split('-')[1]}"}
