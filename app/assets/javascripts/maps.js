@@ -72,6 +72,9 @@ function getRandomNumber(min, max) {
 }
 
 function returnRGBColor(temp) {
+  if (!temp) {
+    return 'rgb(159, 161, 165)';
+  }
   let max = 50;
   let avg = temp/max;
   let red = Math.round(avg*255);
@@ -100,7 +103,7 @@ function renderRealBeacons(mobile) {
   $.get(`https://api.iitrtclab.com/facilities?building_id=${dbcorrelation[building]}&floor=${floor}`).then((beacons) => {
     console.log(beacons);
     beacons.forEach(function(beacon) {
-      setBeacon(beacon.x, beacon.y, mobile)
+      setBeacon(beacon.x, beacon.y, mobile, beacon.temperature)
     });
   });
 }
@@ -258,11 +261,11 @@ function mapY (y) {
   return (y - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-function setBeacon(x, y, mobile) {
+function setBeacon(x, y, mobile, temperature) {
   if (mobile) {
-    renderBeacon(mapX(x), mapY(y), Math.floor(getRandomNumber(0, 50)));
+    renderBeacon(mapX(x), mapY(y), temperature);
   } else {
     const newX = mapX(parseFloat(d3.select('svg').attr('data-width'), 10)) - mapX(x);
-    renderBeacon(mapY(y), newX, Math.floor(getRandomNumber(0, 50)));
+    renderBeacon(mapY(y), newX, temperature);
   }
 }
