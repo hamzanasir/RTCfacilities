@@ -100,15 +100,15 @@ function renderRealBeacons(mobile) {
   const dbcorrelation = {'AM': 4}
   console.log(floor);
   console.log(dbcorrelation[building]);
-  $.get(`https://api.iitrtclab.com/facilities?building_id=${dbcorrelation[building]}&floor=${floor}`).then((beacons) => {
+  $.get(`https://api.iitrtclab.com/beacons/${building}/${floor}`).then((beacons) => {
     console.log(beacons);
     beacons.forEach(function(beacon) {
-      setBeacon(beacon.x, beacon.y, mobile, beacon.temperature)
+      setBeacon(beacon.x, beacon.y, mobile, beacon)
     });
   });
 }
 
-function renderBeacon (x, y, temp) {
+function renderBeacon (x, y, beacon) {
   d3.select('svg').append('circle')
                   .attr("cx", x)
                   .attr("cy", y)
@@ -119,7 +119,7 @@ function renderBeacon (x, y, temp) {
                   .attr("cy", y)
                   .attr("r", 0)
                   .attr("data-toggle", "tooltip")
-                  .attr("title", `Temperature: ${temp}°C`)
+                  .attr("title", `Temperature: ${beacon.temperature}°C \nHumidity: ${beacon.humidity}%`)
                   .on('mouseover', function() {
                     d3.select(this).transition()
                                    .duration(300)
@@ -132,7 +132,7 @@ function renderBeacon (x, y, temp) {
                                    .duration(300)
                                    .attr("r", "50");
                   })
-                  .style("fill", returnRGBColor(temp))
+                  .style("fill", returnRGBColor(beacon.temperature))
                   .style("fill-opacity", "0.6")
                   .style("stroke", "black")
                   .style("stroke-dasharray", "80, 50")
@@ -155,6 +155,9 @@ function renderSVG (mobile, svgName, initialRender) {
       const svg = d3.select('svg');
       svg.attr('width', '100%');
       svg.attr('height', !mobile ? '87vh' : '100%');
+
+      $('#showBeacons').prop('checked', true);
+      renderRealBeacons(mobile);
 
       svg.selectAll('path').each(function (d, i) {
         let room = d3.select(this).attr('id');
@@ -261,11 +264,11 @@ function mapY (y) {
   return (y - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-function setBeacon(x, y, mobile, temperature) {
+function setBeacon(x, y, mobile, beacon) {
   if (mobile) {
-    renderBeacon(mapX(x), mapY(y), temperature);
+    renderBeacon(mapX(x), mapY(y), beacon);
   } else {
     const newX = mapX(parseFloat(d3.select('svg').attr('data-width'), 10)) - mapX(x);
-    renderBeacon(mapY(y), newX, temperature);
+    renderBeacon(mapY(y), newX, beacon);
   }
 }
