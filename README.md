@@ -4,7 +4,7 @@ This is a Ruby 5.1.4 application that will be used to administer and manage temp
 
 ## Setup
 
-To get setup with the application first clone it onto your own machine and run this command:
+To get setup with the application first clone it onto your own machine and run `bundle install --without production`. Once you install the required gems run this command:
 
 ```shell
 rails db:migrate
@@ -25,6 +25,6 @@ rails db:seed
 Finally run:
 
 ```shell
-rails db:seed
+rails server
 ```
 And you should have the server running on localhost:3000.
