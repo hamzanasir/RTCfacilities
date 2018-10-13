@@ -25,6 +25,12 @@ Rails.application.routes.draw do
   
   post '/alumini/:roomNumber', to: 'maps#alumini_room_post'
 
+  get '/ideashop', to: 'maps#ideashop', as: 'ideashop'
+
+  get '/ideashop/:roomNumber', to: 'maps#ideashop_room'
+
+  post '/ideashop/:roomNumber', to: 'maps#ideashop_room_post'
+
   root 'landing#index'
   
   match 'auth/:provider/callback', to: 'sessions#create', via: [:post,:get]

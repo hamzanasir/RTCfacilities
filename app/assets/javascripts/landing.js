@@ -4,7 +4,9 @@ $(document).ready(function() {
     if (building === 'Stuart Building') {
       window.location.href = '/stuart';
     } else if (building === 'Alumini Building') {
-      window.location.href = '/alumini'
+      window.location.href = '/alumini';
+    } else if (building === 'Idea Shop'){
+      window.location.href = '/ideashop';
     } else {
       $('#inputBuilding').addClass('is-invalid');
     }

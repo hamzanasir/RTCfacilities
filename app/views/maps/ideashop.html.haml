@@ -1,0 +1,75 @@
+%div.meny
+  %div.sidecontents
+    %h3 Advanced
+    %ul
+      %li
+        %label{:for => "showBeacons", :style => "margin-right: 4px;"} Show Beacons
+        %input#showBeacons.sw{:name => "toggle", :type => "checkbox"}/
+        %label{:for => "showBeacons"}
+          %span
+      %li
+        Outside Temperature:
+        %span#outsideTemperature N/A
+      %li
+        Outside Humidity:
+        %span#outsideHumidity N/A
+      %li
+        #label{:for => "room"} Submit Request for Room
+        %select#room{"data-live-search" => "true"}
+          - @rooms.each do |room|
+            %option{"data-tokens" => "#{room.roomNumber.split('-')[1]}"}
+              = room.roomNumber
+
+%div.meny-arrow
+
+%div.contents
+  %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    %div.container
+      %a.navbar-brand{:href => "/"} RTCFacilities
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item.active
+            = link_to 'Home', root_path, class: 'nav-link'
+        %select#floor{:style => "width: 27%;"}
+          %option{:value => "1", :selected => "true"} IS-01
+  - if flash[:notice]
+    .alert.alert-success.container{:role => "alert", :style => "margin-top: 25px;"}
+      = flash[:notice]
+  - elsif flash[:error]
+    .alert.alert-danger.container{:role => "alert", :style => "margin-top: 25px;"}
+      = flash[:error]
+
+  %div.svgContainer#ideaShopSvg
+
+/ Modal
+#submitReport.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "submitReportLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %h5#submitReportLabel.modal-title
+          Submit Request for
+          %span#modalRoom
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        %form{:action => "", :method => "POST"}
+          %label{:for => "tempOptions"} Temperature Request
+          .row
+            .btn-group.btn-group-toggle#tempOptions{"data-toggle" => "buttons", :style => "width: 50%; margin: 0 auto;"}
+              %label.btn.btn-danger.active{:style => "width: 100%;"}
+                %input#option1{:autocomplete => "off", :checked => true, :name => "higher", :type => "radio", :value => "higher"}/
+                <i class="fas fa-arrow-alt-circle-up"></i>
+              %label.btn.btn-primary{:style => "width: 100%;"}
+                %input#option2{:autocomplete => "off", :name => "higher", :type => "radio", :value => "lower"}/
+                <i class="fas fa-arrow-alt-circle-down"></i>
+          .form-group
+            %label{:for => "exampleFormControlTextarea1"} More information
+            %textarea#exampleFormControlTextarea1.form-control{:rows => "3", :name => "complaint"}
+
+          .modal-footer
+            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+            %button.btn.btn-primary{:type => "submit"} Submit changes
+
+

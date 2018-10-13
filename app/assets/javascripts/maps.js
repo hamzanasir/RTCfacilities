@@ -97,9 +97,6 @@ function renderRealBeacons(mobile) {
   const building = $('#floor').select2('data')[0].text.split('-')[0];
   const floor = $('#floor').select2('data')[0].text.split('-')[1];
   // Database correlation for building_id's and Building's. Should do this via API
-  const dbcorrelation = {'AM': 4}
-  console.log(floor);
-  console.log(dbcorrelation[building]);
   $.get(`https://api.iitrtclab.com/beacons/${building}/${floor}`).then((beacons) => {
     console.log(beacons);
     beacons.forEach(function(beacon) {
@@ -119,7 +116,7 @@ function renderBeacon (x, y, beacon) {
                   .attr("cy", y)
                   .attr("r", 0)
                   .attr("data-toggle", "tooltip")
-                  .attr("title", `Temperature: ${beacon.temperature}°C \nHumidity: ${beacon.humidity}%`)
+                  .attr("title", `Temperature: ${beacon.temperature}°C \nHumidity: ${beacon.humidity}%\nLast Updated: ${moment(beacon.updatetimestamp).format('MMMM Do YYYY, h:mm:ss a')}`)
                   .on('mouseover', function() {
                     d3.select(this).transition()
                                    .duration(300)
@@ -141,7 +138,42 @@ function renderBeacon (x, y, beacon) {
                   .duration(300)
                   .attr("r", 50)
                   .attr("transform", "rotate(180deg)");
-  }
+}
+
+function renderIdeaShopBeacon (x, y, beacon) {
+    d3.select('svg').append('circle')
+        .attr("cx", x)
+        .attr("cy", y)
+        .attr("r", 1);
+
+    d3.select('svg').append('circle')
+        .attr("cx", x)
+        .attr("cy", y)
+        .attr("r", 0)
+        .attr("data-toggle", "tooltip")
+        .attr("title", `Temperature: ${beacon.temperature}°C \nHumidity: ${beacon.humidity}%\nLast Updated: ${moment(beacon.updatetimestamp).format('MMMM Do YYYY, h:mm:ss a')}`)
+        .on('mouseover', function() {
+            d3.select(this).transition()
+                .duration(300)
+                .attr("r", "9");
+            $(this).tooltip();
+            $(this).tooltip('show');
+        })
+        .on('mouseout', function () {
+            d3.select(this).transition()
+                .duration(300)
+                .attr("r", "4.5");
+        })
+        .style("fill", returnRGBColor(beacon.temperature))
+        .style("fill-opacity", "0.6")
+        .style("stroke", "black")
+        .style("stroke-dasharray", "9, 3")
+        .style("stroke-width", "0.75")
+        .transition()
+        .duration(300)
+        .attr("r", 4.5)
+        .attr("transform", "rotate(180deg)");
+}
 
 function renderSVG (mobile, svgName, initialRender) {
   const currentPath = window.location.pathname;
@@ -266,9 +298,17 @@ function mapY (y) {
 
 function setBeacon(x, y, mobile, beacon) {
   if (mobile) {
-    renderBeacon(mapX(x), mapY(y), beacon);
+    if (beacon.building_id !== 64) {
+      renderBeacon(mapX(x), mapY(y), beacon);
+    } else {
+      renderIdeaShopBeacon(mapX(x), mapY(y), beacon);
+    }
   } else {
     const newX = mapX(parseFloat(d3.select('svg').attr('data-width'), 10)) - mapX(x);
-    renderBeacon(mapY(y), newX, beacon);
+    if (beacon.building_id !== 64) {
+      renderBeacon(mapY(y), newX, beacon);
+    } else {
+      renderIdeaShopBeacon(mapY(y), newX, beacon);
+    }
   }
 }
